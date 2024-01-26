@@ -2,7 +2,7 @@
 
 
 + [1. Explain the System.out.print()](#1-explain-the-systemoutprint)
-+ [2. What is the main method and how it works?](#2-what-is-the-main-method-and-how-its-works-?)
++ [2. What is the main method and how it works ?](#2-what-is-the-main-method-and-how-its-works-?)
 
   
 
