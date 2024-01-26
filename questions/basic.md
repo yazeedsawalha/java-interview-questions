@@ -1,4 +1,4 @@
-Here's your document formatted and professional for a Markdown file:
+These questions you will be asked for any java interview, if you asked question that not in the list feel free to make pull request to this file 
 
 # Basic Java Interview Questions
 
@@ -239,7 +239,7 @@ Overloading and Overriding are two concepts that allow you to define methods wit
     }
     ``` 
 
-## 13. What is the difference between the 'equals' method and the '==' (equality) operator in Java?
+## 13. What is the difference between the equals method and the equality operator in java?
 
 - `'equals'`: A method for checking content equality between objects.
 - `'=='`: An operator for checking reference equality between objects.
