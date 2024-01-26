@@ -4,8 +4,16 @@
 + [1. Explain the System.out.print()](#1-explain-the-systemoutprint)
 + [2. What is the main method and how its works?](#2-what-is-the-main-method-and-how-its-work)
 + [3. What are the access modifiers?](#3-what-are-the-access-modifiers)
-+ [4. What is the difference between Final, Finalize and Finally?](#4-what-is-the-difference-between-final-finalize-and-finally)
-  
++ [4. What is the difference between final, finalize and finally?](#4-what-is-the-difference-between-final-finalize-and-finally)
++ [5. What is the difference between Sting, StringBuilder and StringBuffer?](#5-what-is-the-difference-between-sting-stringbuilder-and-stringbuffer)
++ [6. What is the String Pool in Java?](#6-what-is-the-string-pool-in-java)
++ [7. What is the difference between instance variables and local variables in Java?](#7-what-is-the-difference-between-instance-variables-and-local-variables-in-java)
++ [8. What does 'static' mean in Java?](#8-what-does-static-mean-in-java)
++ [9. What is Exception Handling in Java, and what are the different types of exceptions?](#9-what-is-exception-handling-in-java-and-what-are-the-different-types-of-exceptions)
++ [10. How does Garbage Collection work?](#10-how-does-garbage-collection-work)
++ [11. What are the differences between JDK, JVM, and JRE?](#11-what-are-the-differences-between-jdk-jvm-and-jre)
++ [12. What do Overloading and Overriding mean in Java?](#12-what-do-overloading-and-overriding-mean-in-java)
++ [13. What is the difference between the 'equals' method and the '==' (equality) operator in Java?](#13-what-is-the-difference-between-the-equals-method-and-the-equality-operator-in-java)
 
 ## 1. Explain the System.out.print
 
@@ -72,3 +80,89 @@ You can override the finalize method in your class to provide custom cleanup ope
 `finally:` is a block used in exception handling in Java (try-catch-finally).
 The finally block is used to ensure that a certain block of code is always executed, whether an exception is thrown or not.
 It is typically used for cleanup operations, like closing files or releasing resources, to ensure they are performed regardless of exceptions.
+
+
+## What is the difference between Sting, StringBuilder and StringBuffer?
+
+- `String :`
+    - Immutable: Once created, the value cannot be changed.
+    - Every modification creates a new `String` object.
+    - Inefficient for frequent modifications due to memory and performance overhead.
+    - Memory: Stored in the String Pool, a special area of the heap memory.
+-  `StringBuilder :`
+    - Mutable: Allows changes without creating new objects.
+    - Not thread-safe: Cannot be safely used in a multi-threaded environment without external synchronization.
+    - Efficient for frequent modifications in single-threaded scenarios.
+    - Memory: Stored in the heap memory, but not in the String Pool.
+- `StringBuffer :`
+    - Mutable: Like `StringBuilder`, it allows changes without creating new objects.
+    - Thread-safe: Methods are synchronized, making it safe for use in multi-threaded environments.
+    - Slightly less efficient than `StringBuilder` due to overhead of synchronization.
+    - Memory: Stored in the heap memory, but not in the String Pool.
+
+## 6. What is the String Pool in Java?
+
+- **String Pool**:
+    - Special memory region where Java stores literal string values.
+    - Optimizes memory usage by storing identical strings in the same location.
+    - Strings in the pool are immutable.
+    - Achieves memory efficiency by allowing string reuse.
+
+## 7. What is the difference between instance variables and local variables in Java?
+
+- **Instance Variables**:
+    - Declared within a class but outside any method.
+    - Represents object state; accessible by all methods in the class.
+    - Have default values; exist as long as the object exists.
+- **Local Variables**:
+    - Declared within methods; accessible only there.
+    - No default values; must be initialized before use.
+    - Exist only during method execution; destroyed afterwards.
+
+## 8. What does 'static' mean in Java?
+
+- **Static**:
+    - Indicates class-level members (variables or methods).
+    - Accessible without creating a class instance.
+    - Shared among all instances of the class.
+    - Useful for constants or utility functions.
+
+## 9. What is Exception Handling in Java, and what are the different types of exceptions?
+
+- **Exception Handling**:
+    - Mechanism to handle runtime errors, maintaining normal application flow.
+    - Uses try-catch blocks.
+- **Types of Exceptions**:
+    - **Checked Exceptions**: Checked at compile-time (e.g., `IOException`).
+    - **Unchecked Exceptions**: Checked at runtime (e.g., `NullPointerException`).
+
+## 10. How does Garbage Collection work?
+
+- **Garbage Collection**:
+    - JVM process reclaiming memory from unused objects.
+    - Identifies and frees memory of objects no longer in use.
+    - Automatic process, prevents memory leaks and optimizes memory.
+
+## 11. What are the differences between JDK, JVM, and JRE?
+
+- **JDK (Java Development Kit)**:
+    - Full suite for Java development, including JRE and development tools.
+- **JVM (Java Virtual Machine)**:
+    - Runs Java bytecode; language-agnostic virtual machine.
+- **JRE (Java Runtime Environment)**:
+    - Contains JVM and libraries for running Java programs.
+
+## 12. What do Overloading and Overriding mean in Java?
+
+- **Overloading**:
+    - Multiple methods with the same name but different parameters in a class.
+- **Overriding**:
+    - Subclass method providing a specific implementation of a superclass method.
+
+## 13. What is the difference between the 'equals' method and the '==' (equality) operator in Java?
+
+- **'equals' Method**:
+    - Checks content equality between objects.
+    - Can be overridden in custom classes.
+- **'==' Operator**:
+    - Checks reference equality (whether two references point to the same object).    
