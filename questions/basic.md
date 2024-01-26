@@ -164,10 +164,106 @@ The Java Virtual Machine (JVM) manages Garbage Collection. It has a garbage coll
 
 ## 12. What do Overloading and Overriding mean in Java?
 
-- `Overloading`: Defining multiple methods with the same name but different parameters.
-- `Overriding`: Redefining a method in a subclass that exists in the superclass.
+Overloading and Overriding are two concepts that allow you to define methods with the same name but different functionalities.
+
+### Overloading
+- **Definition**: Occurs when two or more methods in a class have the same name but different parameters (different type, number, or both).
+- **Example**:
+    ```java
+    class ExampleClass {
+        // Overloaded method with one parameter
+        void display(int a) {
+            System.out.println("Got Integer data.");
+        }
+
+        // Overloaded method with different parameter
+        void display(String a) {
+            System.out.println("Got String data.");
+        }
+    }
+    ```
+
+### Overriding
+- **Definition**: When a method in a subclass has the same name, return type, and parameters as a method in its superclass, thereby providing its own implementation.
+- **Example**:
+    ```java
+    class ParentClass {
+        void show() {
+            System.out.println("Parent show method");
+        }
+    }
+
+    class ChildClass extends ParentClass {
+        // Overriding method
+        @Override
+        void show() {
+            System.out.println("Child show method");
+        }
+    }
+    ```
+
+### True/False Examples
+
+1. **Overloading Example**:
+    ```java
+    class Demo {
+        void foo(int a) { /*...*/ }
+        void foo(int a, int b) { /*...*/ } 
+       // True: This is a valid example of overloading.
+    }
+
+    class Demo {
+        int foo(int a) { return a; }
+        double foo(int a) { return 2.5; }
+       // False: Overloading cannot be done by changing the return type alone.
+    }
+    ```
+
+2. **Overriding Example**:
+    ```java
+    class A {
+        void display() { System.out.println("A"); }
+    }
+    class B extends A {
+        @Override
+        void display() { System.out.println("B"); }
+       // True: This is a valid example of overriding.
+    }
+
+    class A {
+        void display() { System.out.println("A"); }
+    }
+    class B extends A {
+        int display() { return 1; } 
+      // False: Overriding cannot change the return type if it changes the method signature.
+    }
+    ``` 
 
 ## 13. What is the difference between the 'equals' method and the '==' (equality) operator in Java?
 
 - `'equals'`: A method for checking content equality between objects.
 - `'=='`: An operator for checking reference equality between objects.
+
+#### 'equals' Method
+- **Usage**: It's a method defined in the `Object` class for checking content equality between two objects.
+- **Functionality**: It compares the values inside the objects. The method can be overridden in a class to define what equality means for instances of that class.
+- **Example**:
+    ```java
+    String str1 = new String("Hello");
+    String str2 = new String("Hello");
+    boolean result = str1.equals(str2); // True, because the content is the same.
+    ```
+
+#### '==' Operator
+- **Usage**: An operator that checks if two references point to the same object.
+- **Functionality**: It compares the memory addresses of the objects, not their content.
+- **Example**:
+    ```java
+    String str1 = new String("Hello");
+    String str2 = new String("Hello");
+    boolean result = str1 == str2; // False, because they are two different objects in memory.
+    ```
+
+#### When I can use them ?
+- Use `'equals'` when you want to compare the contents or values of objects.
+- Use `'=='` when you want to know if two references are pointing to the same object in memory.
