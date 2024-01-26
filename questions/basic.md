@@ -3,7 +3,8 @@
 
 + [1. Explain the System.out.print()](#1-explain-the-systemoutprint)
 + [2. What is the main method and how its works?](#2-what-is-the-main-method-and-how-its-work)
-
++ [3. What are the access modifiers?](#3-what-are-the-access-modifiers)
++ [4. What is the difference between Final, Finalize and Finally?](#4-what-is-the-difference-between-final-finalize-and-finally)
   
 
 ## 1. Explain the System.out.print
@@ -45,3 +46,29 @@ We will delve into each of these concepts one by one in the following questions.
 - `main:` This is the name of the method and serves as the starting point of a Java program.
 
 - `String[] args:` This is a way to provide information to the program when you run it using the command line. It's like a list of words (strings) you can use.
+
+
+## 3. What are the access modifiers?
+
+`default:` access modifier is without any access specifier. Data members, classes, and methods marked as default are accessible only within the same package.
+
+`private:` access modifiers are marked with the keyword private and are accessible only within the class itself. They are not accessible by classes from the same package.
+
+`protected:` access modifiers can be accessed within the same package or by subclasses from different packages.
+
+`public:` access modifiers are accessible from everywhere.
+
+
+## 4. What is the difference between Final, Finalize, and Finally?
+`final:` is a keyword used in Java to indicate that a variable, method, or class cannot be changed or extended.
+- When applied to a variable, it means the variable's value cannot be modified after initialization.
+- When applied to a method, it means the method cannot be overridden in subclasses.
+- When applied to a class, it means the class cannot be extended by other classes.
+
+`finalize:` is a method in the Object class in Java.
+It is called by the garbage collector before reclaiming an object's memory.
+You can override the finalize method in your class to provide custom cleanup operations before an object is garbage collected.
+
+`finally:` is a block used in exception handling in Java (try-catch-finally).
+The finally block is used to ensure that a certain block of code is always executed, whether an exception is thrown or not.
+It is typically used for cleanup operations, like closing files or releasing resources, to ensure they are performed regardless of exceptions.
