@@ -36,12 +36,12 @@ main method in Java is the entry point of any standalone Java application
 
 We will delve into each of these concepts one by one in the following questions. Let is start answering the interviewer:
 
-- **public:** It is one of the access modifiers, and it means anyone can access this method.
+- `public:` It is one of the access modifiers, and it means anyone can access this method.
 
-- **static:** This is a keyword in Java. When we use it with a method, it means we can call this method without creating an object from the class. In other words, it belongs to the class itself.
+- `static:` This is a keyword in Java. When we use it with a method, it means we can call this method without creating an object from the class. In other words, it belongs to the class itself.
 
-- **void:** This means that the method doesn't provide any information when it's called.
+- `void:` This means that the method doesn't provide any information when it's called.
 
-- **main:** This is the name of the method and serves as the starting point of a Java program.
+- `main:` This is the name of the method and serves as the starting point of a Java program.
 
-- **String[] args:** This is a way to provide information to the program when you run it using the command line. It's like a list of words (strings) you can use.
+- `String[] args:` This is a way to provide information to the program when you run it using the command line. It's like a list of words (strings) you can use.
