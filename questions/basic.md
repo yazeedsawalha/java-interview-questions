@@ -26,6 +26,8 @@ Let's break it down step by step. First, we have three components: `System`, `ou
 - `out`: We call `out` in the `System` class, so maybe `out` is a field, object, or method. However, since we are calling `print` after `out`, `out` should be an object. So, `out` is a `PrintStream` object.
 - `print`: Here, we pass a value to print something, so it should be a method that accepts argument parameters. Therefore, `print` is a method inside the `out` object used to print values.
 
+[back to the top](#basic-java-interview-questions)
+
 ## 2. What is the main method and how does it work?
 
 The main method in Java serves as the entry point for any standalone Java application. It's signature is:
@@ -49,6 +51,8 @@ public static void main(String[] args) {
 - `main`: The method name recognized by the JVM as the program's starting point.
 - `String[] args`: Parameters for command-line arguments.
 
+[back to the top](#basic-java-interview-questions)
+
 ## 3. What are the access modifiers?
 
 Access modifiers in Java define the scope of access for classes, methods, and variables. They include:
@@ -57,6 +61,8 @@ Access modifiers in Java define the scope of access for classes, methods, and va
 - `private`: Accessible only within the declared class.
 - `protected`: Accessible within the same package or subclasses in different packages.
 - `public`: Accessible from any class.
+
+[back to the top](#basic-java-interview-questions)
 
 ## 4. What is the difference between final, finalize, and finally?
 
@@ -68,6 +74,8 @@ Yeah this is a tricky question from the interviewer,
   - `final class:` If you make any class as final, you cannot extend it.
 - `finalize`: A method in the Object class for cleanup before garbage collection.
 - `finally`: A block in try-catch-finally for code that executes regardless of exceptions.
+
+[back to the top](#basic-java-interview-questions)
 
 ## 5. What is the difference between String, StringBuilder, and StringBuffer?
 
@@ -81,9 +89,13 @@ Yeah this is a tricky question from the interviewer,
   - Mutable like StringBuilder but thread-safe.
   - Slightly less efficient due to synchronization.
 
+[back to the top](#basic-java-interview-questions)
+
 ## 6. What is the String Pool in Java?
 
 The String Pool is a memory region for storing unique string literals. Java optimizes memory by reusing strings from this pool, enhancing performance for string manipulation.
+
+[back to the top](#basic-java-interview-questions)
 
 ## 7. What is the difference between instance variables and local variables in Java?
 
@@ -93,13 +105,19 @@ class.
 
 - `Local Variables`: Declared inside methods, accessible only within the method scope.
 
+[back to the top](#basic-java-interview-questions)
+
 ## 8. What does 'static' mean in Java?
 
 `static` in Java indicates that a field or method belongs to the class itself rather than an instance, allowing direct access without creating an object.
 
+[back to the top](#basic-java-interview-questions)
+
 ## 9. What is Exception Handling in Java, and what are the different types of exceptions?
 
 Certainly! Here's an improved explanation of Exception Handling in Java, with clearer points and examples for each type of exception:
+
+[back to the top](#basic-java-interview-questions)
 
 ## 9. What is Exception Handling in Java, and what are the different types of exceptions?
 
@@ -132,6 +150,7 @@ Exception Handling in Java is a method to manage runtime errors, ensuring that t
           // Handle exception
       }
       ```
+[back to the top](#basic-java-interview-questions)
 
 ## 10. How does Garbage Collection work?
 
@@ -156,11 +175,15 @@ The Java Virtual Machine (JVM) manages Garbage Collection. It has a garbage coll
 - There is a higher risk of memory leaks, where unused objects continue to occupy memory, leading to inefficiency and, in severe cases, application crashes.
 - The application may suffer from increased memory usage and reduced performance over time.
 
+[back to the top](#basic-java-interview-questions)
+
 ## 11. What are the differences between JDK, JVM, and JRE?
 
 - `JDK`: Java Development Kit, the complete kit for developing Java applications.
 - `JVM`: Java Virtual Machine, executes Java bytecode and provides a runtime environment.
 - `JRE`: Java Runtime Environment, consists of JVM and core libraries for running Java applications.
+
+[back to the top](#basic-java-interview-questions)
 
 ## 12. What do Overloading and Overriding mean in Java?
 
@@ -238,6 +261,8 @@ Overloading and Overriding are two concepts that allow you to define methods wit
       // False: Overriding cannot change the return type if it changes the method signature.
     }
     ``` 
+
+[back to the top](#basic-java-interview-questions)
 
 ## 13. What is the difference between the equals method and the equality operator in java?
 
