@@ -2,7 +2,7 @@
 
 
 + [1. Explain the System.out.print()](#1-explain-the-systemoutprint)
-+ [2. What is the main method and how it works ?](#2-what-is-the-main-method-and-how-its-works-?)
++ [2. What is the main method and how its works?](#2-what-is-the-main-method-and-how-its-works)
 
   
 
@@ -17,7 +17,7 @@ Let's break it down step by step. First, we have three components: `System`, `ou
 - `print`: Here, we pass a value to print something, so it should be a method that accepts argument parameters. Therefore, `print` is a method inside the `out` object used to print values.
 
 
-## 2. What is the main method and how its work ?
+## 2. What is the main method and how its work?
 
 main method in Java is the entry point of any standalone Java application
 
