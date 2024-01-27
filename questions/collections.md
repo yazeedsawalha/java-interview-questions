@@ -66,6 +66,8 @@ ArrayList<String> parkingGarage = new ArrayList<>();
 
 ```
 
+[back to the top](#java-collections-interview-questions)
+
 ## 3. What are the key differences between ArrayLists and LinkedLists in Java?
 
 **Interviewer:** Can you explain the differences between `ArrayLists` and `LinkedLists` in Java?
@@ -103,6 +105,7 @@ tasks.add("Task 1");
 tasks.add("Task 2");
 tasks.add(1, "Task 1.5"); // Insertion in the middle
 ```
+[back to the top](#java-collections-interview-questions)
 
 ## 4. What are the contrasts between HashMap and Hashtable in Java?
 
@@ -141,6 +144,9 @@ sharedNotes.put("Meeting 1", 42);
 sharedNotes.put("Meeting 2", 55);
 ```
 
+[back to the top](#java-collections-interview-questions)
+
+
 ## 5. How do HashMaps and HashSets differ in Java?
 
 **Interviewer:** Can you explain the differences between `HashMaps` and `HashSets` in Java?
@@ -177,6 +183,7 @@ uniqueNames.add("Alice");
 uniqueNames.add("Bob");
 uniqueNames.add("Alice"); // Won't allow duplicates
 ```
+[back to the top](#java-collections-interview-questions)
 
 ## 6. When should you use EnumSet and EnumMap in Java, and what are their differences?
 
@@ -225,6 +232,9 @@ lightDurations.put(TrafficLight.RED, 30);
 lightDurations.put(TrafficLight.YELLOW, 5);
 lightDurations.put(TrafficLight.GREEN, 45);
 ```
+
+[back to the top](#java-collections-interview-questions)
+
 
 ## 7. Can you explain the differences between Comparable and Comparator in Java?
 
@@ -283,6 +293,9 @@ List<Book> library = Arrays.asList(/* List of books */);
 Collections.sort(library, new BookComparator()); // Uses custom comparator
 ```
 
+[back to the top](#java-collections-interview-questions)
+
+
 ## 8. What are the primary distinctions between ArrayDeque and PriorityQueue in Java?
 
 **Interviewer:** What are the primary distinctions between ArrayDeque and PriorityQueue in Java?
@@ -322,6 +335,8 @@ priorityQueue.add(2);
 int highestPriority = priorityQueue.poll(); // Retrieve the highest priority element
 ```
 
+[back to the top](#java-collections-interview-questions)
+
 ## 9. How does the Map data structure work in Java, and what are its key features and uses?
 
 **Interviewer:** How does the Map data structure work in Java, and what are its key features and uses?
@@ -358,3 +373,5 @@ sortedPhoneBook.put("Alice", 12345);
 sortedPhoneBook.put("Bob", 67890);
 String firstContact = sortedPhoneBook.firstKey(); // Retrieve the first contact
 ```
+
+[back to the top](#java-collections-interview-questions)
