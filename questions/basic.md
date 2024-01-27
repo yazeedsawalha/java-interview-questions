@@ -1,5 +1,7 @@
 These questions you will be asked for any java interview, if you asked question that not in the list feel free to make pull request to this file 
 
+![Basic Java Interview Questions](../images/questions/basic.png)
+
 # Basic Java Interview Questions
 
 + [1. Explain the System.out.print()](#1-explain-the-systemoutprint)
