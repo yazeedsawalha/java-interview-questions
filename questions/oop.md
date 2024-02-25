@@ -1,7 +1,6 @@
 These questions you will be asked for any java interview, if you asked question that not in the list feel free to make
 pull request to this file
 
-![OOP Interview Questions](../images/questions/oop.png)
 
 # OOP Interview Questions
 

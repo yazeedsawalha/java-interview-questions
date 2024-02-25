@@ -1,8 +1,6 @@
 These questions you will be asked for any java interview, if you asked question that not in the list feel free to make
 pull request to this file
 
-![Java Collections Interview Questions](../images/questions/collections.png)
-
 # Java Collections Interview Questions
 
 + [1. What is the Collection interface in Java?](#1-what-is-the-collection-interface-in-java)
